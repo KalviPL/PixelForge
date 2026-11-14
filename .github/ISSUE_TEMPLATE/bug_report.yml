@@ -55,5 +55,3 @@ body:
       options:
         - label: Sprawdziłem, czy podobny problem nie został już zgłoszony.
           required: true
-
-blank_issues_enabled: false
