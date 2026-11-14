@@ -73,3 +73,12 @@ body:
       options:
         - label: I have checked that a similar issue hasn't already been reported.
           required: true
+
+- type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Videos (Optional)
+      description: Drag and drop or paste (Ctrl+V) any screenshots, logs, or short videos that help explain the bug.
+      placeholder: Paste your screenshots or video links here...
+    validations:
+      required: false
