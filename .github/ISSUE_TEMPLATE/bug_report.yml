@@ -10,9 +10,11 @@ body:
       label: Select Plugin
       description: Which plugin does this issue affect?
       options:
-        - Plugin 1 (change to your plugin name)
-        - Plugin 2
-        - Plugin 3
+        - PixelMessage
+        - AdvancedMOTD
+        - UpdateChecker
+        - ChunkLock - Core
+        - PixelEvents
     validations:
       required: true
 
