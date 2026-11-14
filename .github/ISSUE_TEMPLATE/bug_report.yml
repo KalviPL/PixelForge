@@ -1,6 +1,7 @@
 name: 🐛 Bug Report
 description: Report a bug found in one of the plugins
 title: "[Bug]: "
+type: Bug
 labels: ["bug"]
 body:
   - type: dropdown
