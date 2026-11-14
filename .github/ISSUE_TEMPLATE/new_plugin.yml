@@ -12,3 +12,12 @@ body:
       placeholder: Describe your vision for the new plugin here...
     validations:
       required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Screenshots / Concept Art / References (Optional)
+      description: Drag and drop or paste (Ctrl+V) any concept images, GUI layouts, or reference screenshots.
+      placeholder: Paste your images or references here...
+    validations:
+      required: false
