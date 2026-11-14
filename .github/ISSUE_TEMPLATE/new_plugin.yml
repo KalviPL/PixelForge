@@ -1,6 +1,7 @@
 name: 🚀 New Plugin Idea
 description: Suggest creating a brand new Minecraft plugin
 title: "[New Plugin]: "
+type: Feature
 labels: ["new-plugin"]
 body:
   - type: textarea
