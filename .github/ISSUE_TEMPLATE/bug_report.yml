@@ -1,0 +1,59 @@
+name: Zgłoszenie błędu / Sugestia
+description: Opisz problem lub propozycję nowej funkcji w PixelForge
+title: "[Zgłoszenie]: "
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie! Wypełnij poniższe pola, aby ułatwić nam pracę.
+
+  - type: input
+    id: wersja
+    attributes:
+      label: Wersja programu / gry
+      description: Na jakiej wersji zauważyłeś problem?
+      placeholder: np. v1.2.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: System operacyjny
+      options:
+        - Windows 10 / 11
+        - Linux
+        - macOS
+        - Inny
+    validations:
+      required: true
+
+  - type: textarea
+    id: opis
+    attributes:
+      label: Opis problemu lub pomysłu
+      description: Opisz dokładnie, co się stało lub co chcesz zaproponować.
+      placeholder: Tutaj wpisz szczegóły...
+    validations:
+      required: true
+
+  - type: textarea
+    id: kroki
+    attributes:
+      label: Kroki do odtworzenia (opcjonalnie)
+      description: Jak możemy wywołać ten sam błąd u siebie?
+      placeholder: |
+        1. Otwórz aplikację
+        2. Kliknij w...
+        3. Pojawia się błąd
+
+  - type: checkboxes
+    id: potwierdzenie
+    attributes:
+      label: Potwierdzenie
+      options:
+        - label: Sprawdziłem, czy podobny problem nie został już zgłoszony.
+          required: true
+
+blank_issues_enabled: false
