@@ -1,0 +1,13 @@
+name: 🚀 New Plugin Idea
+description: Suggest creating a brand new Minecraft plugin
+title: "[New Plugin]: "
+labels: ["new-plugin"]
+body:
+  - type: textarea
+    id: plugin-idea
+    attributes:
+      label: New Plugin Description
+      description: Describe the main mechanics, commands, permissions, and target server type for this plugin.
+      placeholder: Describe your vision for the new plugin here...
+    validations:
+      required: true
