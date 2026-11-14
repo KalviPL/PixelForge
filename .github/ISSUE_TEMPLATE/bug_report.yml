@@ -1,57 +1,72 @@
-name: Zgłoszenie błędu / Sugestia
-description: Opisz problem lub propozycję nowej funkcji w PixelForge
-title: "[Zgłoszenie]: "
-labels: ["triage"]
+name: 🐛 Bug Report
+description: Report a bug found in one of the plugins
+title: "[Bug]: "
+labels: ["bug"]
 body:
-  - type: markdown
+  - type: dropdown
+    id: plugin
     attributes:
-      value: |
-        Dziękujemy za zgłoszenie! Wypełnij poniższe pola, aby ułatwić nam pracę.
+      label: Select Plugin
+      description: Which plugin does this issue affect?
+      options:
+        - Plugin 1 (change to your plugin name)
+        - Plugin 2
+        - Plugin 3
+    validations:
+      required: true
 
   - type: input
-    id: wersja
+    id: mc-version
     attributes:
-      label: Wersja programu / gry
-      description: Na jakiej wersji zauważyłeś problem?
-      placeholder: np. v1.2.0
+      label: Minecraft Version
+      description: What client/server version are you running?
+      placeholder: e.g., 1.21.4
     validations:
       required: true
 
-  - type: dropdown
-    id: system
+  - type: input
+    id: server-engine
     attributes:
-      label: System operacyjny
-      options:
-        - Windows 10 / 11
-        - Linux
-        - macOS
-        - Inny
+      label: Server Software / Engine
+      description: Enter the server software and its version (from /version).
+      placeholder: e.g., Paper 1.21.4-130, Purpur, Spigot
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin Version
+      description: What version of the plugin do you have installed?
+      placeholder: e.g., v1.0.2
     validations:
       required: true
 
   - type: textarea
-    id: opis
+    id: description
     attributes:
-      label: Opis problemu lub pomysłu
-      description: Opisz dokładnie, co się stało lub co chcesz zaproponować.
-      placeholder: Tutaj wpisz szczegóły...
+      label: Problem Description
+      description: Describe clearly what is happening, and paste any relevant console logs or errors.
+      placeholder: Describe the problem here...
     validations:
       required: true
 
   - type: textarea
-    id: kroki
+    id: steps
     attributes:
-      label: Kroki do odtworzenia (opcjonalnie)
-      description: Jak możemy wywołać ten sam błąd u siebie?
+      label: Steps to Reproduce (Optional)
+      description: How can we replicate this bug on a test server?
       placeholder: |
-        1. Otwórz aplikację
-        2. Kliknij w...
-        3. Pojawia się błąd
+        1. Type command...
+        2. Click on...
+        3. Error appears in console
+    validations:
+      required: false
 
   - type: checkboxes
-    id: potwierdzenie
+    id: confirmation
     attributes:
-      label: Potwierdzenie
+      label: Confirmation
       options:
-        - label: Sprawdziłem, czy podobny problem nie został już zgłoszony.
+        - label: I have checked that a similar issue hasn't already been reported.
           required: true
