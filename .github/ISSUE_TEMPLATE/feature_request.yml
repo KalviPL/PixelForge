@@ -10,11 +10,9 @@ body:
       label: Select Plugin
       description: Which plugin does this feature request affect?
       options:
-        - PixelMessage
-        - AdvancedMOTD
-        - UpdateChecker
-        - ChunkLock - Core
-        - PixelEvents
+        - Plugin 1 (change to your plugin name)
+        - Plugin 2
+        - Plugin 3
     validations:
       required: true
 
@@ -26,3 +24,12 @@ body:
       placeholder: Describe your idea here...
     validations:
       required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Screenshots / Mockups / Examples (Optional)
+      description: Drag and drop or paste (Ctrl+V) any images, UI mockups, or examples from other plugins to illustrate your idea.
+      placeholder: Paste your images or examples here...
+    validations:
+      required: false
