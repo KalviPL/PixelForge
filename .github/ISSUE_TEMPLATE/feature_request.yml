@@ -1,0 +1,25 @@
+name: 💡 Feature Request
+description: Propose a new feature or improvement for an existing plugin
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Select Plugin
+      description: Which plugin does this feature request affect?
+      options:
+        - Plugin 1 (change to your plugin name)
+        - Plugin 2
+        - Plugin 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: Idea Description
+      description: Describe in detail how this new feature should work and what purpose it serves.
+      placeholder: Describe your idea here...
+    validations:
+      required: true
